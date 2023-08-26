@@ -1,0 +1,18 @@
+{
+  "$schema": "https://json.schemastore.org/chrome-manifest",
+  "manifest_version": 2,
+  "name": "SecureTyper",
+  "description": "セキュアにタイピングできます。",
+  "version": "0.1.0",
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "content_scripts/main.js"
+      ]
+    }
+  ],
+  "permissions": [
+    "<all_urls>"
+  ]
+}
